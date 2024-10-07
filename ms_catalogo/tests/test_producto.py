@@ -35,5 +35,6 @@ class ProductTestCase(unittest.TestCase):
         self.assertEqual(producto.id, 1)
         self.assertEqual(producto.name, 'remera1')
         self.assertEqual(producto.price, 12334)
+        
 if __name__ == "__main__":
     unittest.main()

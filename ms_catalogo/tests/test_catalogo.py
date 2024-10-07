@@ -23,10 +23,20 @@ class CatalogoTestCase(unittest.TestCase):
             
     def test_catalogo(self):
         producto = Producto()
-        producto.id=1
         producto.name = 'remera'
         producto.price = 12334
-        buscar_producto(producto)
+        producto.save()
+        producto.find()
         self.assertEqual(producto.activate ,True)
         self.assertEqual(producto.name, 'remera')
         self.assertEqual(producto.price, 12334)
+    def test_catalogo_fail(self):
+        producto = Producto()
+        producto.name = 'remera1'
+        producto.price = 123343
+        producto.find()
+        self.assertEqual(producto.activate ,False)
+        self.assertEqual(producto.name, 'remera1')
+        self.assertEqual(producto.price, 123343)
+if __name__ == "__main__":
+    unittest.main()

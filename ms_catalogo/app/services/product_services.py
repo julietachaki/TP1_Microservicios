@@ -10,7 +10,7 @@ class ProductService:
     def save(self, producto: Producto) -> Producto:
         db.session.add(producto)
         db.session.commit()
-        return producto
+        return repository.save(producto)
     
 
     

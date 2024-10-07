@@ -1,1 +1,1 @@
-#from .product_repository import ProductRepository
+from .product_repository import ProductRepository

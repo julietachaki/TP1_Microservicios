@@ -1,3 +1,2 @@
-from .ms_catalogo import Calatogo
-
-#from .product_services import ProductRepository
+from .catalogo import CalatogoService
+from .product_services import ProductService
