@@ -1,0 +1,8 @@
+requests 
+flask
+sqlalchemy
+psycopgflask-sqlalchemy
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+python-dotenv
